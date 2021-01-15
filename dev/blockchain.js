@@ -1,4 +1,5 @@
-function User()
+function Blockchain()
 {
-var x = "hello";
+    this.chain = [];
+    this.newTransactions = [];
 }
