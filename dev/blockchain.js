@@ -2,8 +2,8 @@ const sha256 = require ('sha256');
 
 function Blockchain()//this will construct a new blockchain everytime it is invoked
 {
-    this.chain = [];
-    this.pendingTransactions = [];
+    this.chain = [];//this array will contain the chain of blocks
+    this.pendingTransactions = [];//this array will contain the latest transactions
 
     this.createNewBlock(100,'0','0');
 }
