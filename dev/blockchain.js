@@ -7,6 +7,10 @@ function Blockchain()//this will construct a new blockchain everytime it is invo
 
     this.createNewBlock(100,'0','0');
 }
+/* Below is a prototype object for the Blockchain created. Prototype objects are not exclusively visible. 
+Blockchain should actually be a class but in JS there's hardly any difference between class and constructor functions.
+
+The createNewBlock function creates a new block in the blockchain with parameters already mentioned below */
 
 Blockchain.prototype.createNewBlock = function(nonce, previousBlockHash, hash){
     const newBlock = {
